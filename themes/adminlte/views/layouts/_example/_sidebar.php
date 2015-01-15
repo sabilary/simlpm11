@@ -195,9 +195,45 @@ $timg     = $themeUrl.'img/';
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a href="pages/forms/general.html"><i class="fa fa-angle-double-right"></i> General Elements</a></li>
-                <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a></li>
-                <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>
+                <?php
+                $title = CHtml::encode('General Elements');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'forms.general')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'forms.general'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Advanced Elements');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'forms.advanced')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'forms.advanced'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Editors');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'forms.editors')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'forms.editors'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
             </ul>
         </li>
         <li class="treeview">
@@ -206,8 +242,32 @@ $timg     = $themeUrl.'img/';
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Simple tables</a></li>
-                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Data tables</a></li>
+                <?php
+                $title = CHtml::encode('Simple tables');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'tables.simple')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'tables.simple'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Data tables');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'tables.data')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'tables.data'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
             </ul>
         </li>
         <?php
@@ -242,13 +302,97 @@ $timg     = $themeUrl.'img/';
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a href="pages/examples/invoice.html"><i class="fa fa-angle-double-right"></i> Invoice</a></li>
-                <li><a href="pages/examples/login.html"><i class="fa fa-angle-double-right"></i> Login</a></li>
-                <li><a href="pages/examples/register.html"><i class="fa fa-angle-double-right"></i> Register</a></li>
-                <li><a href="pages/examples/lockscreen.html"><i class="fa fa-angle-double-right"></i> Lockscreen</a></li>
-                <li><a href="pages/examples/404.html"><i class="fa fa-angle-double-right"></i> 404 Error</a></li>
-                <li><a href="pages/examples/500.html"><i class="fa fa-angle-double-right"></i> 500 Error</a></li>
-                <li><a href="pages/examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a></li>
+                <?php
+                $title = CHtml::encode('Invoice');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'examples.invoice')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'examples.invoice'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Login');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'examples.login')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'examples.login'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Register');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'examples.register')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'examples.register'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Lockscreen');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'examples.lockscreen')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'examples.lockscreen'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('404 Error');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'examples.404')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'examples.404'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('500 Error');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'examples.500')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'examples.500'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Blank Page');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'examples.blank')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'examples.blank'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
             </ul>
         </li>
     </ul>
