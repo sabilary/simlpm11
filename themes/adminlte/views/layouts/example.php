@@ -65,6 +65,11 @@
     // Bootstrap WYSIHTML5
     $cs->registerCssFile($tcss.'bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');
     
+    // fullCalendar
+    $fullcalendar = $twidgets.'fullcalendar/2.2.6/';
+    $cs->registerCssFile($fullcalendar.'fullcalendar.css');
+    $cs->registerCssFile($fullcalendar.'fullcalendar.print.css', 'print');
+    
     // AdminLTE CSS
     $cs->registerCssFile($tcss.'AdminLTE-fonts.css');
     $cs->registerCssFile($tcss.'AdminLTE.css');

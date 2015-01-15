@@ -1739,3 +1739,17 @@ in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
 in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\example.php (36)
 in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (34)
 in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 06:05:29 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 06:05:29 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 06:05:29 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 06:05:29 [trace] [system.CModule] Loading "themeManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 06:05:29 [trace] [system.CModule] Loading "clientScript" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\site\pages\calendar.php (31)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 06:05:29 [trace] [system.CModule] Loading "assetManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\example.php (36)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)

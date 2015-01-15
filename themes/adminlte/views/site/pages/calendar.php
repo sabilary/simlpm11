@@ -22,6 +22,43 @@ $this->pageTitle='Calendar - '.Yii::app()->name;
  * widgets/fullcalendar/2.2.6/fullcalendar.min.js
  * Page specific script
  */
+
+
+/*
+ * JS
+ * =================================================================
+ */
+$cs       = Yii::app()->clientScript;
+$themeUrl = Yii::app()->theme->baseUrl.'/';
+$twidgets = $themeUrl.'widgets/';
+$tjs      = $themeUrl.'js/';
+$tplugins = $tjs.'plugins/';
+$tadmin   = $tjs.'AdminLTE/';
+$tcostum  = $tjs.'costum/';
+    
+// Jquery
+$cs->registerCoreScript('jquery');
+    
+// Bootstrap
+$bootstrap     = $twidgets.'bootstrap/3.3.1/';
+$bootstrap_js  = $bootstrap.'js/';
+$cs->registerScriptFile($bootstrap_js.'bootstrap.min.js', CClientScript::POS_END);
+    
+// Jquery-UI
+$cs->registerCoreScript('jquery.ui');
+    
+// AdminLTE JS
+$cs->registerScriptFile($tadmin.'app.js', CClientScript::POS_END);
+$cs->registerScriptFile($tadmin.'demo.js', CClientScript::POS_END);
+
+// Moment, for fullCalendar
+$cs->registerScriptFile($twidgets.'moment/2.9.0/moment.min.js', CClientScript::POS_END);
+
+// FullCalendar
+$cs->registerScriptFile($twidgets.'fullcalendar/2.2.6/fullcalendar.min.js', CClientScript::POS_END);
+
+// Page specific script
+$cs->registerScriptFile($tcostum.'myfullcalendar.js', CClientScript::POS_END);
 ?>
 
 <!-- Content Header (Page header) -->
