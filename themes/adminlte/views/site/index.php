@@ -1,7 +1,95 @@
 <?php
-/* @var $this SiteController */
+$this->pageTitle='Dashboard - '.Yii::app()->name;
 
-$this->pageTitle=Yii::app()->name;
+/* Dashboard CSS
+ * =================================================================
+ * widgets/bootstrap/3.3.1/css/bootstrap.min.css
+ * widgets/font-awesome/4.2.0/css/font-awesome.min.css
+ * widgets/ionicons/2.0.0/css/ionicons.min.css
+ * css/morris/morris.css
+ * css/jvectormap/jquery-jvectormap-1.2.2.css
+ * css/datepicker/datepicker3.css
+ * css/daterangepicker/daterangepicker-bs3.css
+ * css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css
+ * css/AdminLTE.css
+ */
+
+/* Dashboard JS
+ * =================================================================
+ * js/jquery/2.1.3/jquery.min.js
+ * widgets/bootstrap/3.3.1/js/bootstrap.min.js
+ * js/jquery-ui/1.11.2/jquery-ui.min.js
+ * widgets/raphael/2.1.2/raphael-min.js
+ * js/plugins/morris/morris.min.js
+ * js/plugins/sparkline/jquery.sparkline.min.js
+ * js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js
+ * js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js
+ * js/plugins/jqueryKnob/jquery.knob.js
+ * js/plugins/daterangepicker/daterangepicker.js
+ * js/plugins/datepicker/bootstrap-datepicker.js
+ * js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js
+ * js/plugins/iCheck/icheck.min.js
+ * js/AdminLTE/app.js
+ * js/AdminLTE/dashboard.js
+ * js/AdminLTE/demo.js
+ */
+
+
+/*
+ * JS
+ * =================================================================
+ */
+$cs       = Yii::app()->clientScript;
+$themeUrl = Yii::app()->theme->baseUrl.'/';
+$twidgets = $themeUrl.'widgets/';
+$tjs      = $themeUrl.'js/';
+$tplugins = $tjs.'plugins/';
+$tadmin   = $tjs.'AdminLTE/';
+    
+// Jquery
+$cs->registerCoreScript('jquery');
+    
+// Bootstrap
+$bootstrap     = $twidgets.'bootstrap/3.3.1/';
+$bootstrap_js  = $bootstrap.'js/';
+$cs->registerScriptFile($bootstrap_js.'bootstrap.min.js', CClientScript::POS_END);
+    
+// Jquery-UI
+$cs->registerCoreScript('jquery.ui');
+    
+// Raphael, for Morris
+$raphael = $twidgets.'raphael/2.1.2/';
+$cs->registerScriptFile($raphael.'raphael-min.js', CClientScript::POS_END);
+
+// Morris.js charts
+$cs->registerScriptFile($tplugins.'morris/morris.min.js', CClientScript::POS_END);
+    
+// Sparkline
+$cs->registerScriptFile($tplugins.'sparkline/jquery.sparkline.min.js', CClientScript::POS_END);
+
+// jvectormap
+$cs->registerScriptFile($tplugins.'jvectormap/jquery-jvectormap-1.2.2.min.js', CClientScript::POS_END);
+$cs->registerScriptFile($tplugins.'jvectormap/jquery-jvectormap-world-mill-en.js', CClientScript::POS_END);
+
+// jQuery Knob Chart
+$cs->registerScriptFile($tplugins.'jqueryKnob/jquery.knob.js', CClientScript::POS_END);
+
+// Daterangepicker
+$cs->registerScriptFile($tplugins.'daterangepicker/daterangepicker.js', CClientScript::POS_END);
+
+// Datepicker
+$cs->registerScriptFile($tplugins.'datepicker/bootstrap-datepicker.js', CClientScript::POS_END);
+
+// Bootstrap WYSIHTML5
+$cs->registerScriptFile($tplugins.'bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', CClientScript::POS_END);
+
+// iCheck
+$cs->registerScriptFile($tplugins.'iCheck/icheck.min.js', CClientScript::POS_END);
+    
+// AdminLTE JS
+$cs->registerScriptFile($tadmin.'app.js', CClientScript::POS_END);
+$cs->registerScriptFile($tadmin.'dashboard.js', CClientScript::POS_END);
+$cs->registerScriptFile($tadmin.'demo.js', CClientScript::POS_END);
 ?>
 
 <!-- Content Header (Page header) -->

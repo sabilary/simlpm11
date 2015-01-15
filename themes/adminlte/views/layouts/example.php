@@ -22,29 +22,23 @@
      * Yii::app()->clientScript->registerScriptFile(URL, POSITION);
      **/
 	 
-    // Variabel
-    $cs = Yii::app()->clientScript;
     
+    /*
+     * CSS
+     * =================================================================
+     */
+    $cs       = Yii::app()->clientScript;
     $themeUrl = Yii::app()->theme->baseUrl.'/';
-    $tcss     = $themeUrl.'css/';
-    $tjs      = $themeUrl.'js/';
-    $tplugins = $tjs.'plugins/';
     $twidgets = $themeUrl.'widgets/';
-    
-    // Jquery
-    $cs->registerCoreScript('jquery');
-	//$cs->coreScriptPosition=CClientScript::POS_END;
+    $tcss     = $themeUrl.'css/';
     
     // Jquery-UI
-    $cs->registerCoreScript('jquery.ui');
     $cs->registerCssFile($cs->getCoreScriptUrl().'/jui/css/base/jquery-ui.css');
     
     // Bootstrap
     $bootstrap     = $twidgets.'bootstrap/3.3.1/';
     $bootstrap_css = $bootstrap.'css/';
-    $bootstrap_js  = $bootstrap.'js/';
     $cs->registerCssFile($bootstrap_css.'bootstrap.css');
-    $cs->registerScriptFile($bootstrap_js.'bootstrap.min.js', CClientScript::POS_END);
     
     // Fontawesome
     $fontawesome     = $twidgets.'font-awesome/4.2.0/';
@@ -56,49 +50,24 @@
     $ionicons_css = $ionicons.'css/';
     $cs->registerCssFile($ionicons_css.'ionicons.min.css');
     
-    // Raphael, for Morris
-    $raphael = $twidgets.'raphael/2.1.2/';
-    $cs->registerScriptFile($raphael.'raphael-min.js', CClientScript::POS_END);
-    
     // Morris.js charts
     $cs->registerCssFile($tcss.'morris/morris.css');
-    $cs->registerScriptFile($tplugins.'morris/morris.min.js', CClientScript::POS_END);
-    
-    // Sparkline
-    $cs->registerScriptFile($tplugins.'sparkline/jquery.sparkline.min.js', CClientScript::POS_END);
     
     // jvectormap
     $cs->registerCssFile($tcss.'jvectormap/jquery-jvectormap-1.2.2.css');
-    $cs->registerScriptFile($tplugins.'jvectormap/jquery-jvectormap-1.2.2.min.js', CClientScript::POS_END);
-    $cs->registerScriptFile($tplugins.'jvectormap/jquery-jvectormap-world-mill-en.js', CClientScript::POS_END);
-    
-    // jQuery Knob Chart
-    $cs->registerScriptFile($tplugins.'jqueryKnob/jquery.knob.js', CClientScript::POS_END);
     
     // Daterangepicker
     $cs->registerCssFile($tcss.'daterangepicker/daterangepicker-bs3.css');
-    $cs->registerScriptFile($tplugins.'daterangepicker/daterangepicker.js', CClientScript::POS_END);
     
     // Datepicker
     $cs->registerCssFile($tcss.'datepicker/datepicker3.css');
-    $cs->registerScriptFile($tplugins.'datepicker/bootstrap-datepicker.js', CClientScript::POS_END);
     
     // Bootstrap WYSIHTML5
     $cs->registerCssFile($tcss.'bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');
-    $cs->registerScriptFile($tplugins.'bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', CClientScript::POS_END);
-    
-    // iCheck
-    $cs->registerScriptFile($tplugins.'iCheck/icheck.min.js', CClientScript::POS_END);
     
     // AdminLTE CSS
     $cs->registerCssFile($tcss.'AdminLTE-fonts.css');
     $cs->registerCssFile($tcss.'AdminLTE.css');
-    
-    // AdminLTE JS
-    $tadmin = $tjs.'AdminLTE/';
-    $cs->registerScriptFile($tadmin.'app.js', CClientScript::POS_END);
-    $cs->registerScriptFile($tadmin.'dashboard.js', CClientScript::POS_END);
-    $cs->registerScriptFile($tadmin.'demo.js', CClientScript::POS_END);
     ?>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -112,10 +81,21 @@
             AdminLTE
         </a>
         
-        <?php $this->renderPartial('//layouts/_main/_navbar'); ?>
+        <?php $this->renderPartial('//layouts/_example/_navbar'); ?>
     </header>
     
-    <?php echo $content; ?>
+    
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="left-side sidebar-offcanvas">
+            <?php $this->renderPartial('//layouts/_example/_sidebar'); ?>
+        </aside>
+
+        <!-- Right side column. Contains the navbar and content of the page -->
+        <aside class="right-side">
+            <?php echo $content; ?>
+        </aside><!-- /.right-side -->
+    </div><!-- ./wrapper -->
 
     <!-- add new calendar event modal -->
 

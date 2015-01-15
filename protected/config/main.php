@@ -51,7 +51,13 @@ return array(
      * application components
      * ------------------------------------------------------------------------- */
 	'components'=>array(
-        
+        'clientScript'=>array(
+            'coreScriptPosition'=>CClientScript::POS_END,
+            //'defaultScriptPosition'=>CClientScript::POS_END,
+            //'defaultScriptFilePosition'=>CClientScript::POS_END
+        ),
+
+        // =====================================================================
         // (EXTENSION) ImageMagick configuration
         'image'=>array(
             'class'=>'application.extensions.image.CImageComponent',
