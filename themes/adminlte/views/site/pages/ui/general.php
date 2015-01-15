@@ -1,5 +1,5 @@
 <?php
-$this->pageTitle='Flot Charts - '.Yii::app()->name;
+$this->pageTitle='General UI - '.Yii::app()->name;
 
 
 /*
@@ -16,6 +16,7 @@ $tadmin   = $tjs.'AdminLTE/';
 $tcostum  = $tjs.'costum/';
 
 $placehold = $themeUrl.'img/i-love-bootstrap/900x500/';
+
 
 /*
  * CSS

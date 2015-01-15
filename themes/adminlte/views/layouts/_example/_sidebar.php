@@ -174,6 +174,19 @@ $timg     = $themeUrl.'img/';
                         )
                     ); ?>
                 </li>
+                <?php
+                $title = CHtml::encode('jQuery UI');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'ui.jquery-ui')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'ui.jquery-ui'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
             </ul>
         </li>
         <li class="treeview">
