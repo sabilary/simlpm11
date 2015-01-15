@@ -1,7 +1,23 @@
 <?php
 $this->pageTitle='Calendar - '.Yii::app()->name;
 
-/* Calendar CSS
+
+/*
+ * VARIABLES
+ * =================================================================
+ */
+$cs       = Yii::app()->clientScript;
+$themeUrl = Yii::app()->theme->baseUrl.'/';
+$twidgets = $themeUrl.'widgets/';
+$tcss     = $themeUrl.'css/';
+$tjs      = $themeUrl.'js/';
+$tplugins = $tjs.'plugins/';
+$tadmin   = $tjs.'AdminLTE/';
+$tcostum  = $tjs.'costum/';
+
+
+/*
+ * CSS
  * =================================================================
  * widgets/bootstrap/3.3.1/css/bootstrap.min.css
  * widgets/font-awesome/4.2.0/css/font-awesome.min.css
@@ -10,8 +26,27 @@ $this->pageTitle='Calendar - '.Yii::app()->name;
  * widgets/fullcalendar/2.2.6/fullcalendar.print.css, media='print'
  * css/AdminLTE.css
  */
+// Bootstrap
+$bootstrap     = $twidgets.'bootstrap/3.3.1/';
+$bootstrap_css = $bootstrap.'css/';
+$bootstrap_js  = $bootstrap.'js/';
+$cs->registerCssFile($bootstrap_css.'bootstrap.css');
+    
+// Jquery-UI
+$cs->registerCssFile($cs->getCoreScriptUrl().'/jui/css/base/jquery-ui.css');
+    
+// fullCalendar
+$fullcalendar = $twidgets.'fullcalendar/2.2.6/';
+$cs->registerCssFile($fullcalendar.'fullcalendar.css');
+$cs->registerCssFile($fullcalendar.'fullcalendar.print.css', 'print');
+    
+// AdminLTE CSS
+$cs->registerCssFile($tcss.'AdminLTE-fonts.css');
+$cs->registerCssFile($tcss.'AdminLTE.css');
 
-/* Calendar JS
+
+/*
+ * JS
  * =================================================================
  * js/jquery/2.1.3/jquery.min.js
  * widgets/bootstrap/3.3.1/js/bootstrap.min.js
@@ -22,20 +57,6 @@ $this->pageTitle='Calendar - '.Yii::app()->name;
  * widgets/fullcalendar/2.2.6/fullcalendar.min.js
  * Page specific script
  */
-
-
-/*
- * JS
- * =================================================================
- */
-$cs       = Yii::app()->clientScript;
-$themeUrl = Yii::app()->theme->baseUrl.'/';
-$twidgets = $themeUrl.'widgets/';
-$tjs      = $themeUrl.'js/';
-$tplugins = $tjs.'plugins/';
-$tadmin   = $tjs.'AdminLTE/';
-$tcostum  = $tjs.'costum/';
-    
 // Jquery
 $cs->registerCoreScript('jquery');
     
@@ -52,10 +73,11 @@ $cs->registerScriptFile($tadmin.'app.js', CClientScript::POS_END);
 $cs->registerScriptFile($tadmin.'demo.js', CClientScript::POS_END);
 
 // Moment, for fullCalendar
-$cs->registerScriptFile($twidgets.'moment/2.9.0/moment.min.js', CClientScript::POS_END);
+$moment = $twidgets.'moment/2.9.0/';
+$cs->registerScriptFile($moment.'moment.min.js', CClientScript::POS_END);
 
 // FullCalendar
-$cs->registerScriptFile($twidgets.'fullcalendar/2.2.6/fullcalendar.min.js', CClientScript::POS_END);
+$cs->registerScriptFile($fullcalendar.'fullcalendar.min.js', CClientScript::POS_END);
 
 // Page specific script
 $cs->registerScriptFile($tcostum.'myfullcalendar.js', CClientScript::POS_END);

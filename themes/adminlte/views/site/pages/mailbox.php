@@ -1,7 +1,23 @@
 <?php
 $this->pageTitle='Mailbox - '.Yii::app()->name;
 
-/* Mailbox CSS
+
+/*
+ * VARIABLES
+ * =================================================================
+ */
+$cs       = Yii::app()->clientScript;
+$themeUrl = Yii::app()->theme->baseUrl.'/';
+$twidgets = $themeUrl.'widgets/';
+$tcss     = $themeUrl.'css/';
+$tjs      = $themeUrl.'js/';
+$tplugins = $tjs.'plugins/';
+$tadmin   = $tjs.'AdminLTE/';
+$tcostum  = $tjs.'costum/';
+
+
+/*
+ * CSS
  * =================================================================
  * widgets/bootstrap/3.3.1/css/bootstrap.min.css
  * widgets/font-awesome/4.2.0/css/font-awesome.min.css
@@ -10,8 +26,25 @@ $this->pageTitle='Mailbox - '.Yii::app()->name;
  * css/iCheck/minimal/blue.css
  * css/AdminLTE.css
  */
+// Bootstrap
+$bootstrap     = $twidgets.'bootstrap/3.3.1/';
+$bootstrap_css = $bootstrap.'css/';
+$bootstrap_js  = $bootstrap.'js/';
+$cs->registerCssFile($bootstrap_css.'bootstrap.css');
 
-/* Mailbox JS
+// Bootstrap WYSIHTML5 - text editor
+$cs->registerCssFile($tcss.'bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');
+
+// iCheck for checkboxes and radio inputs
+$cs->registerCssFile($tcss.'iCheck/minimal/blue.css');
+    
+// AdminLTE CSS
+$cs->registerCssFile($tcss.'AdminLTE-fonts.css');
+$cs->registerCssFile($tcss.'AdminLTE.css');
+
+
+/*
+ * JS
  * =================================================================
  * js/jquery/2.1.3/jquery.min.js
  * widgets/bootstrap/3.3.1/js/bootstrap.min.js
@@ -21,6 +54,24 @@ $this->pageTitle='Mailbox - '.Yii::app()->name;
  * js/plugins/iCheck/icheck.min.js
  * Page script
  */
+// Jquery
+$cs->registerCoreScript('jquery');
+    
+// Bootstrap
+$cs->registerScriptFile($bootstrap_js.'bootstrap.min.js', CClientScript::POS_END);
+    
+// AdminLTE JS
+$cs->registerScriptFile($tadmin.'app.js', CClientScript::POS_END);
+$cs->registerScriptFile($tadmin.'demo.js', CClientScript::POS_END);
+
+// Bootstrap WYSIHTML5
+$cs->registerScriptFile($tplugins.'bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', CClientScript::POS_END);
+
+// iCheck
+$cs->registerScriptFile($tplugins.'iCheck/icheck.min.js', CClientScript::POS_END);
+
+// Page script
+$cs->registerScriptFile($tcostum.'myiCheck.js', CClientScript::POS_END);
 ?>
 
 <!-- Content Header (Page header) -->

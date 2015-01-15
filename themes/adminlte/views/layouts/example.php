@@ -32,47 +32,15 @@
     $twidgets = $themeUrl.'widgets/';
     $tcss     = $themeUrl.'css/';
     
-    // Jquery-UI
-    $cs->registerCssFile($cs->getCoreScriptUrl().'/jui/css/base/jquery-ui.css');
-    
-    // Bootstrap
-    $bootstrap     = $twidgets.'bootstrap/3.3.1/';
-    $bootstrap_css = $bootstrap.'css/';
-    $cs->registerCssFile($bootstrap_css.'bootstrap.css');
-    
     // Fontawesome
     $fontawesome     = $twidgets.'font-awesome/4.2.0/';
     $fontawesome_css = $fontawesome.'css/';
     $cs->registerCssFile($fontawesome_css.'font-awesome.css');
-    
+
     // Ionicons
     $ionicons     = $twidgets.'ionicons/2.0.0/';
     $ionicons_css = $ionicons.'css/';
     $cs->registerCssFile($ionicons_css.'ionicons.min.css');
-    
-    // Morris.js charts
-    $cs->registerCssFile($tcss.'morris/morris.css');
-    
-    // jvectormap
-    $cs->registerCssFile($tcss.'jvectormap/jquery-jvectormap-1.2.2.css');
-    
-    // Daterangepicker
-    $cs->registerCssFile($tcss.'daterangepicker/daterangepicker-bs3.css');
-    
-    // Datepicker
-    $cs->registerCssFile($tcss.'datepicker/datepicker3.css');
-    
-    // Bootstrap WYSIHTML5
-    $cs->registerCssFile($tcss.'bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');
-    
-    // fullCalendar
-    $fullcalendar = $twidgets.'fullcalendar/2.2.6/';
-    $cs->registerCssFile($fullcalendar.'fullcalendar.css');
-    $cs->registerCssFile($fullcalendar.'fullcalendar.print.css', 'print');
-    
-    // AdminLTE CSS
-    $cs->registerCssFile($tcss.'AdminLTE-fonts.css');
-    $cs->registerCssFile($tcss.'AdminLTE.css');
     ?>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>

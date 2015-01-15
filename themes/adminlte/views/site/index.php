@@ -1,7 +1,23 @@
 <?php
 $this->pageTitle='Dashboard - '.Yii::app()->name;
 
-/* Dashboard CSS
+
+/*
+ * VARIABLES
+ * =================================================================
+ */
+$cs       = Yii::app()->clientScript;
+$themeUrl = Yii::app()->theme->baseUrl.'/';
+$twidgets = $themeUrl.'widgets/';
+$tcss     = $themeUrl.'css/';
+$tjs      = $themeUrl.'js/';
+$tplugins = $tjs.'plugins/';
+$tadmin   = $tjs.'AdminLTE/';
+$tcostum  = $tjs.'costum/';
+
+
+/*
+ * CSS
  * =================================================================
  * widgets/bootstrap/3.3.1/css/bootstrap.min.css
  * widgets/font-awesome/4.2.0/css/font-awesome.min.css
@@ -13,8 +29,37 @@ $this->pageTitle='Dashboard - '.Yii::app()->name;
  * css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css
  * css/AdminLTE.css
  */
+// Bootstrap
+$bootstrap     = $twidgets.'bootstrap/3.3.1/';
+$bootstrap_css = $bootstrap.'css/';
+$bootstrap_js  = $bootstrap.'js/';
+$cs->registerCssFile($bootstrap_css.'bootstrap.css');
+    
+// Jquery-UI
+$cs->registerCssFile($cs->getCoreScriptUrl().'/jui/css/base/jquery-ui.css');
+    
+// Morris.js charts
+$cs->registerCssFile($tcss.'morris/morris.css');
 
-/* Dashboard JS
+// jvectormap
+$cs->registerCssFile($tcss.'jvectormap/jquery-jvectormap-1.2.2.css');
+
+// Daterangepicker
+$cs->registerCssFile($tcss.'daterangepicker/daterangepicker-bs3.css');
+
+// Datepicker
+$cs->registerCssFile($tcss.'datepicker/datepicker3.css');
+
+// Bootstrap WYSIHTML5
+$cs->registerCssFile($tcss.'bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');
+    
+// AdminLTE CSS
+$cs->registerCssFile($tcss.'AdminLTE-fonts.css');
+$cs->registerCssFile($tcss.'AdminLTE.css');
+
+
+/*
+ * JS
  * =================================================================
  * js/jquery/2.1.3/jquery.min.js
  * widgets/bootstrap/3.3.1/js/bootstrap.min.js
@@ -33,25 +78,10 @@ $this->pageTitle='Dashboard - '.Yii::app()->name;
  * js/AdminLTE/dashboard.js
  * js/AdminLTE/demo.js
  */
-
-
-/*
- * JS
- * =================================================================
- */
-$cs       = Yii::app()->clientScript;
-$themeUrl = Yii::app()->theme->baseUrl.'/';
-$twidgets = $themeUrl.'widgets/';
-$tjs      = $themeUrl.'js/';
-$tplugins = $tjs.'plugins/';
-$tadmin   = $tjs.'AdminLTE/';
-    
 // Jquery
 $cs->registerCoreScript('jquery');
     
 // Bootstrap
-$bootstrap     = $twidgets.'bootstrap/3.3.1/';
-$bootstrap_js  = $bootstrap.'js/';
 $cs->registerScriptFile($bootstrap_js.'bootstrap.min.js', CClientScript::POS_END);
     
 // Jquery-UI
