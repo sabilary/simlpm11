@@ -1,0 +1,212 @@
+2015/01/15 02:38:08 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:38:08 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:38:08 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:38:08 [trace] [system.CModule] Loading "themeManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:38:09 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (2)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:38:09 [trace] [system.CModule] Loading "clientScript" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (30)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:38:09 [trace] [system.CModule] Loading "assetManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:38:09 [trace] [system.CModule] Loading "user" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:38:09 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:38:10 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (172)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "themeManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (2)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "clientScript" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (30)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "assetManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "user" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:41 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (162)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "themeManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "user" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (14)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (14)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (34)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:44 [trace] [system.CModule] Loading "clientScript" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (68)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:45 [trace] [system.CModule] Loading "assetManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+2015/01/15 02:39:45 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:45 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:45 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:39:45 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "themeManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "user" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (14)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (14)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (34)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "clientScript" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\views\site\contact.php (68)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "assetManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (73)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:42:29 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "themeManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (2)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "clientScript" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (30)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "assetManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "user" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:46:22 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (172)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "log" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "request" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "urlManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "themeManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "widgetFactory" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (2)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+in C:\wamp\www\skripsi\lpm\simlpm11\index.php (13)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "clientScript" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (30)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "assetManager" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (38)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "user" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "session" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (154)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
+2015/01/15 02:47:28 [trace] [system.CModule] Loading "coreMessages" application component
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\main.php (172)
+in C:\wamp\www\skripsi\lpm\simlpm11\themes\adminlte\views\layouts\column1.php (6)
+in C:\wamp\www\skripsi\lpm\simlpm11\protected\controllers\SiteController.php (33)
