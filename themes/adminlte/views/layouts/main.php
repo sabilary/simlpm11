@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     
     <?php
     /**
@@ -23,11 +23,13 @@
      **/
 	 
     // Variabel
-    $baseUrl = Yii::app()->request->baseUrl.'/';
-    $assets  = $baseUrl.'assets/';
-    $js      = $baseUrl.'js/';
-    $css     = $baseUrl.'css/';
-    $cs      = Yii::app()->clientScript;
+    $cs = Yii::app()->clientScript;
+    
+    $themeUrl = Yii::app()->theme->baseUrl.'/';
+    $tcss     = $themeUrl.'css/';
+    $tjs      = $themeUrl.'js/';
+    $tplugins = $tjs.'plugins/';
+    $twidgets = $themeUrl.'widgets/';
     
     // Jquery
     $cs->registerCoreScript('jquery');
@@ -38,141 +40,50 @@
     $cs->registerCssFile($cs->getCoreScriptUrl().'/jui/css/base/jquery-ui.css');
     
     // Bootstrap
-    $bootstrap     = $assets.'bootstrap-3.3.1/';
+    $bootstrap     = $twidgets.'bootstrap/3.3.1/';
     $bootstrap_css = $bootstrap.'css/';
     $bootstrap_js  = $bootstrap.'js/';
-    
     $cs->registerCssFile($bootstrap_css.'bootstrap.css');
     $cs->registerScriptFile($bootstrap_js.'bootstrap.min.js', CClientScript::POS_END);
     
     // Fontawesome
-    $fontawesome     = $assets.'fontawesome-4.2.0/';
+    $fontawesome     = $twidgets.'font-awesome/4.2.0/';
     $fontawesome_css = $fontawesome.'css/';
-    
     $cs->registerCssFile($fontawesome_css.'font-awesome.css');
     
-    // Select2
-    $select2 = $assets.'select2-3.5.1/';
+    // Ionicons
+    $ionicons     = $twidgets.'ionicons/2.0.0/';
+    $ionicons_css = $ionicons.'css/';
+    $ionicons_js  = $ionicons.'js/';
+    $cs->registerCssFile($ionicons_css.'ionicons.min.css');
     
-    $cs->registerScriptFile($select2.'select2.js', CClientScript::POS_END);
-    $cs->registerCssFile($select2.'select2.css');
-    $cs->registerCssFile($select2.'select2-bootstrap.css');
-    $cs->registerScript('select2', "
-        $('.select2').select2({
-            minimumResultsForSearch: 20,
-            placeholder: 'Pilih',
-            allowClear: true,
-        }); 
-    ", CClientScript::POS_END);
+    // AdminLTE CSS
+    $cs->registerCssFile($tcss.'AdminLTE-fonts.css');
+    $cs->registerCssFile($tcss.'AdminLTE.css');
     
-    // Cleditor
-    $cleditor = $assets.'cleditor-1.4.5/';
-    
-    $cs->registerScriptFile($cleditor.'jquery.cleditor.js', CClientScript::POS_END);
-    $cs->registerCssFile($cleditor.'jquery.cleditor.css');
-    
-    // Costume JS
-    $cs->registerScript('slideToggle-button', "
-        $('.search-button').click(function(){
-            $('.search-body').slideToggle();
-            return false;
-        });
-    ");
-
-    $cs->registerScript('reset-button', "
-        $('.reset-button').click(function(){
-            $('.select2').select2('val', '');
-        });
-    ");
-    
-    $cs->registerScript('form-input', "
-        $('input.nospace').keyup(function(event)
-        {
-            // skip for arrow keys
-            if(event.which >= 37 && event.which <= 40) return;
-
-            // format number
-            $(this).val(function(index, value) {
-                return value
-                    .replace(/\s/g, '')
-                ;
-            });
-        });
-
-        $('input.number').keyup(function(event)
-        {
-            // skip for arrow keys
-            if(event.which >= 37 && event.which <= 40) return;
-
-            // format number
-            $(this).val(function(index, value) {
-                return value
-                    .replace(/\D/g, '')
-                ;
-            });
-        });
-        
-        $('input.money').keyup(function(event) {
-            // skip for arrow keys
-            if(event.which >= 37 && event.which <= 40) return;
-
-            // format number
-            $(this).val(function(index, value) {
-                return value
-                    .replace(/\D/g, '')
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, '.')
-                ;
-            });
-        });
-    ", CClientScript::POS_END);
-    
-    // Costume CSS
-    $costum_css = $css.'costum_css/';
-    $cs->registerCssFile($costum_css.'css_screen.css', 'screen, projection');
-    $cs->registerCssFile($costum_css.'css_navigation.css');
-    $cs->registerCssFile($costum_css.'css_form.css');
-    $cs->registerCssFile($costum_css.'css_main.css');
+    // AdminLTE JS
+    $tadminlte = $tjs.'AdminLTE/';
+    $cs->registerScriptFile($tadminlte.'app.js', CClientScript::POS_END);
+    $cs->registerScriptFile($tadminlte.'demo.js', CClientScript::POS_END);
     ?>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
+<body class="skin-blue">
+    <!-- header logo: style can be found in header.less -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            AdminLTE
+        </a>
+        
+        <?php $this->renderPartial('//layouts/_main/_navbar'); ?>
+    </header>
+    
+    <?php echo $content; ?>
 
-<div>
-
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
-	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
-
-</div><!-- page -->
+    <!-- add new calendar event modal -->
 
 </body>
 </html>

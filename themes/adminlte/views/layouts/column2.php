@@ -1,22 +1,14 @@
 <?php /* @var $this Controller */ ?>
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="span-19">
-	<div id="content">
-		<?php echo $content; ?>
-	</div><!-- content -->
-</div>
-<div class="span-5 last">
-	<div id="sidebar">
-	<?php
-		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'Operations',
-		));
-		$this->widget('zii.widgets.CMenu', array(
-			'items'=>$this->menu,
-			'htmlOptions'=>array('class'=>'operations'),
-		));
-		$this->endWidget();
-	?>
-	</div><!-- sidebar -->
-</div>
+<div class="wrapper row-offcanvas row-offcanvas-left">
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="left-side sidebar-offcanvas">
+        <?php $this->renderPartial('//layouts/_column2/_sidebar'); ?>
+    </aside>
+
+    <!-- Right side column. Contains the navbar and content of the page -->
+    <aside class="right-side">
+        <?php echo $content; ?>
+    </aside><!-- /.right-side -->
+</div><!-- ./wrapper -->
 <?php $this->endContent(); ?>

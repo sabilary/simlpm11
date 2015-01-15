@@ -19,20 +19,6 @@ $this->pageTitle=Yii::app()->name;
 <!-- Main content -->
 <section class="content">
 
-    <p>Congratulations! You have successfully created your Yii application.</p>
-
-    <p>You may change the content of this page by modifying the following two files:</p>
-    <ul>
-        <li>View file: <code><?php echo __FILE__; ?></code></li>
-        <li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-    </ul>
-
-    <p>For more details on how to further develop this application, please read
-    the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-    Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-    should you have any questions.</p>
-
-
     <!-- Small boxes (Stat box) -->
     <div class="row">
         <div class="col-lg-3 col-xs-6">
@@ -147,9 +133,13 @@ $this->pageTitle=Yii::app()->name;
                     </div>
                 </div>
                 <div class="box-body chat" id="chat-box">
+                    <?php
+                    $themeUrl = Yii::app()->theme->baseUrl.'/';
+                    $timg     = $themeUrl.'img/';
+                    ?>
                     <!-- chat item -->
                     <div class="item">
-                        <img src="img/avatar.png" alt="user image" class="online"/>
+                        <img src="<?php echo $timg; ?>avatar.png" alt="user image" class="online"/>
                         <p class="message">
                             <a href="#" class="name">
                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
@@ -171,7 +161,7 @@ $this->pageTitle=Yii::app()->name;
                     </div><!-- /.item -->
                     <!-- chat item -->
                     <div class="item">
-                        <img src="img/avatar2.png" alt="user image" class="offline"/>
+                        <img src="<?php echo $timg; ?>avatar2.png" alt="user image" class="offline"/>
                         <p class="message">
                             <a href="#" class="name">
                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
@@ -184,7 +174,7 @@ $this->pageTitle=Yii::app()->name;
                     </div><!-- /.item -->
                     <!-- chat item -->
                     <div class="item">
-                        <img src="img/avatar3.png" alt="user image" class="offline"/>
+                        <img src="<?php echo $timg; ?>avatar3.png" alt="user image" class="offline"/>
                         <p class="message">
                             <a href="#" class="name">
                                 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
