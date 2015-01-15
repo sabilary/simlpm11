@@ -15,6 +15,7 @@ $tplugins = $tjs.'plugins/';
 $tadmin   = $tjs.'AdminLTE/';
 $tcostum  = $tjs.'costum/';
 
+$placehold = $themeUrl.'img/i-love-bootstrap/900x500/';
 
 /*
  * CSS
@@ -412,21 +413,21 @@ $cs->registerScriptFile($tadmin.'demo.js', CClientScript::POS_END);
                         </ol>
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="../../img/i-love-bootstrap/900x500/39CCCC.gif" alt="First slide">
+                                <img src="<?php echo $placehold; ?>39CCCC.gif" alt="First slide">
                                 <!-- http://placehold.it/900x500/39CCCC/ffffff&text=I+Love+Bootstrap -->
                                 <div class="carousel-caption">
                                     First Slide
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="../../img/i-love-bootstrap/900x500/3c8dbc.gif" alt="Second slide">
+                                <img src="<?php echo $placehold; ?>3c8dbc.gif" alt="Second slide">
                                 <!-- http://placehold.it/900x500/3c8dbc/ffffff&text=I+Love+Bootstrap -->
                                 <div class="carousel-caption">
                                     Second Slide
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="../../img/i-love-bootstrap/900x500/f39c12.gif" alt="Third slide">
+                                <img src="<?php echo $placehold; ?>f39c12.gif" alt="Third slide">
                                 <!-- http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap -->
                                 <div class="carousel-caption">
                                     Third Slide

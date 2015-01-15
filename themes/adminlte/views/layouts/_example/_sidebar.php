@@ -109,11 +109,71 @@ $timg     = $themeUrl.'img/';
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a href="pages/UI/general.html"><i class="fa fa-angle-double-right"></i> General</a></li>
-                <li><a href="pages/UI/icons.html"><i class="fa fa-angle-double-right"></i> Icons</a></li>
-                <li><a href="pages/UI/buttons.html"><i class="fa fa-angle-double-right"></i> Buttons</a></li>
-                <li><a href="pages/UI/sliders.html"><i class="fa fa-angle-double-right"></i> Sliders</a></li>
-                <li><a href="pages/UI/timeline.html"><i class="fa fa-angle-double-right"></i> Timeline</a></li>
+                <?php
+                $title = CHtml::encode('General');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'ui.general')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'ui.general'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Icons');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'ui.icons')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'ui.icons'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Buttons');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'ui.buttons')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'ui.buttons'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Sliders');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'ui.sliders')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'ui.sliders'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Timeline');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'ui.timeline')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'ui.timeline'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
             </ul>
         </li>
         <li class="treeview">

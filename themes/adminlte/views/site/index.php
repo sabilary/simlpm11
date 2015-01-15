@@ -15,6 +15,7 @@ $tplugins = $tjs.'plugins/';
 $tadmin   = $tjs.'AdminLTE/';
 $tcostum  = $tjs.'costum/';
 
+$timg     = $themeUrl.'img/';
 
 /*
  * CSS
@@ -251,10 +252,6 @@ $cs->registerScriptFile($tadmin.'demo.js', CClientScript::POS_END);
                     </div>
                 </div>
                 <div class="box-body chat" id="chat-box">
-                    <?php
-                    $themeUrl = Yii::app()->theme->baseUrl.'/';
-                    $timg     = $themeUrl.'img/';
-                    ?>
                     <!-- chat item -->
                     <div class="item">
                         <img src="<?php echo $timg; ?>avatar.png" alt="user image" class="online"/>
