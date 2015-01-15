@@ -57,6 +57,40 @@
     $ionicons_js  = $ionicons.'js/';
     $cs->registerCssFile($ionicons_css.'ionicons.min.css');
     
+    // Raphael, for Morris
+    $raphael = $twidgets.'raphael/2.1.2/';
+    $cs->registerScriptFile($raphael.'raphael-min.js', CClientScript::POS_END);
+    
+    // Morris.js charts
+    $cs->registerCssFile($tcss.'morris/morris.css');
+    $cs->registerScriptFile($tplugins.'morris/morris.min.js', CClientScript::POS_END);
+    
+    // Sparkline
+    $cs->registerScriptFile($tplugins.'sparkline/jquery.sparkline.min.js', CClientScript::POS_END);
+    
+    // jvectormap
+    $cs->registerCssFile($tcss.'jvectormap/jquery-jvectormap-1.2.2.css');
+    $cs->registerScriptFile($tplugins.'jvectormap/jquery-jvectormap-1.2.2.min.js', CClientScript::POS_END);
+    $cs->registerScriptFile($tplugins.'jvectormap/jquery-jvectormap-world-mill-en.js', CClientScript::POS_END);
+    
+    // jQuery Knob Chart
+    $cs->registerScriptFile($tplugins.'jqueryKnob/jquery.knob.js', CClientScript::POS_END);
+    
+    // Daterangepicker
+    $cs->registerCssFile($tcss.'daterangepicker/daterangepicker-bs3.css');
+    $cs->registerScriptFile($tplugins.'daterangepicker/daterangepicker.js', CClientScript::POS_END);
+    
+    // Datepicker
+    $cs->registerCssFile($tcss.'datepicker/datepicker3.css');
+    $cs->registerScriptFile($tplugins.'datepicker/bootstrap-datepicker.js', CClientScript::POS_END);
+    
+    // Bootstrap WYSIHTML5
+    $cs->registerCssFile($tcss.'bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css');
+    $cs->registerScriptFile($tplugins.'bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', CClientScript::POS_END);
+    
+    // iCheck
+    $cs->registerScriptFile($tplugins.'iCheck/icheck.min.js', CClientScript::POS_END);
+    
     // AdminLTE CSS
     $cs->registerCssFile($tcss.'AdminLTE-fonts.css');
     $cs->registerCssFile($tcss.'AdminLTE.css');
@@ -64,6 +98,7 @@
     // AdminLTE JS
     $tadminlte = $tjs.'AdminLTE/';
     $cs->registerScriptFile($tadminlte.'app.js', CClientScript::POS_END);
+    $cs->registerScriptFile($tadminlte.'dashboard.js', CClientScript::POS_END);
     $cs->registerScriptFile($tadminlte.'demo.js', CClientScript::POS_END);
     ?>
 
