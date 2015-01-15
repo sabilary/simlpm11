@@ -61,8 +61,6 @@ $cs->registerCssFile($tcss.'AdminLTE.css');
 $cs->registerCoreScript('jquery');
     
 // Bootstrap
-$bootstrap     = $twidgets.'bootstrap/3.3.1/';
-$bootstrap_js  = $bootstrap.'js/';
 $cs->registerScriptFile($bootstrap_js.'bootstrap.min.js', CClientScript::POS_END);
     
 // Jquery-UI
@@ -80,7 +78,7 @@ $cs->registerScriptFile($moment.'moment.min.js', CClientScript::POS_END);
 $cs->registerScriptFile($fullcalendar.'fullcalendar.min.js', CClientScript::POS_END);
 
 // Page specific script
-$cs->registerScriptFile($tcostum.'myfullcalendar.js', CClientScript::POS_END);
+$cs->registerScriptFile($tcostum.'calendar_fullcalendar.js', CClientScript::POS_END);
 ?>
 
 <!-- Content Header (Page header) -->

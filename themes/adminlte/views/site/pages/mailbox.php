@@ -71,7 +71,7 @@ $cs->registerScriptFile($tplugins.'bootstrap-wysihtml5/bootstrap3-wysihtml5.all.
 $cs->registerScriptFile($tplugins.'iCheck/icheck.min.js', CClientScript::POS_END);
 
 // Page script
-$cs->registerScriptFile($tcostum.'myiCheck.js', CClientScript::POS_END);
+$cs->registerScriptFile($tcostum.'mailbox_icheck.js', CClientScript::POS_END);
 ?>
 
 <!-- Content Header (Page header) -->
