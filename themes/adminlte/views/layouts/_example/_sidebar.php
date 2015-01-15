@@ -61,9 +61,45 @@ $timg     = $themeUrl.'img/';
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Morris</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Flot</a></li>
-                <li><a href="pages/charts/inline.html"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
+                <?php
+                $title = CHtml::encode('Morris');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'charts.morris')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'charts.morris'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Flot');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'charts.flot')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'charts.flot'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
+                <?php
+                $title = CHtml::encode('Inline charts');
+                $active = ($this->id == 'site' && ($this->action->id == 'page' && Yii::app()->request->getParam('view') == 'charts.inline')) ? 'active' : null;
+                ?>
+                <li class="<?php echo $active; ?>">
+                    <?php echo CHtml::link(
+                        '<i class="fa fa-angle-double-right"></i> '. $title,
+                        array('//site/page/', 'view'=>'charts.inline'),
+                        array(
+                            'title' => $title,
+                        )
+                    ); ?>
+                </li>
             </ul>
         </li>
         <li class="treeview">
